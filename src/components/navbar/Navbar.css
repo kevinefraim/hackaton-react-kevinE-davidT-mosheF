@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav-container {
+  background-color: #94dbf0;
+}
+.left-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.nav-list {
+  display: flex;
+  margin: 0;
+}
+.nav-list li {
+  list-style: none;
+  margin: 5px;
+}
+
+.left-nav img {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+}
+
+.right-nav {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+.right-nav i {
+  margin: 12px;
+}
+
+.links {
+  text-decoration: none;
+  color: #000;
+}
