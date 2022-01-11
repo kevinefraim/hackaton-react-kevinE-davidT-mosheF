@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "./Pelicula.css";
 
 const Pelicula = ({ title, id, poster_path, vote_average, children }) => {
   return (
@@ -9,13 +10,13 @@ const Pelicula = ({ title, id, poster_path, vote_average, children }) => {
         alt="Card image cap"
       />
       <div class="card-body">
-        <Link to={`/${id}`} className="links">
-          <h6 class="card-text">{title}</h6>
-        </Link>
-        <div className="description">
-          <p class="card-text">Calificación: {vote_average}</p>
-          {children}
+        <div className="card-main">
+          <Link to={`/${id}`} className="links">
+            <h6 class="card-text">{title}</h6>
+          </Link>
+          <p class="card-text my-4">Calificación: {vote_average}</p>
         </div>
+        {children}
       </div>
     </div>
   );

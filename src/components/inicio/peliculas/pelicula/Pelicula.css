@@ -1,0 +1,6 @@
+.card-main {
+  display: flex;
+  height: 70%;
+  flex-direction: column;
+  justify-content: center;
+}

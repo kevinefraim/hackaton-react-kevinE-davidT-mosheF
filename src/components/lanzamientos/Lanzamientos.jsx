@@ -16,15 +16,18 @@ const Lanzamientos = () => {
         setLanzamientos(response.data.results);
       });
   }, []);
-  console.log(lanzamientos);
+
   return (
     <>
       <h1 className="text-center p-2">Nuevos lanzamientos</h1>
       <div className="fav-container">
         {lanzamientos.map((movie) => (
           <Pelicula key={movie.id} {...movie}>
-            <button onClick={() => addFav(movie)} className="btn btn-primary">
-              <i className="bi bi-heart-fill m-4"></i>
+            <button
+              onClick={() => addFav(movie)}
+              className="btn btn-primary w-25"
+            >
+              <i className="bi bi-heart-fill "></i>
             </button>
           </Pelicula>
         ))}

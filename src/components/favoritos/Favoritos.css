@@ -1,7 +1,7 @@
 .fav-container {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
   justify-content: center;
   align-items: center;
 }

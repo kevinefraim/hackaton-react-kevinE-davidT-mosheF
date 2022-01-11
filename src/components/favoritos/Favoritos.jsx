@@ -11,11 +11,12 @@ const Favoritos = () => {
     setFavoritos(favoritos.filter((favorito) => favorito.id != id));
   };
   return (
-    <div className="container p-2">
+    <div className="container-fluid">
       <h1 className="text-center">Favoritos</h1>
       <div className="fav-container">
         {favoritos.length === 0 && (
-          <h2 className="text-center text-danger m-5">
+          <h2 className="d-block text-danger">
+            <br />
             Agrega peliculas a tus favoritos!
           </h2>
         )}

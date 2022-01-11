@@ -30,7 +30,7 @@ const Navbar = () => {
               />
             </form>
             <Link to="/favoritos" className="links">
-              <i className="bi bi-heart-fill">{favoritos.length}</i>
+              <i className="bi bi-heart-fill font-heart">{favoritos.length}</i>
             </Link>
           </div>
         </nav>

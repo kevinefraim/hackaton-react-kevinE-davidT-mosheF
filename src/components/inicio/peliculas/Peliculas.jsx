@@ -16,15 +16,17 @@ const Peliculas = () => {
       });
   }, []);
 
-  console.log(datosPeliculas);
   return (
     <>
       <h2 className="text-center m-2 p-2">Peliculas Populares</h2>
       <div className="populares">
         {datosPeliculas.map((movie) => (
           <Pelicula key={movie.id} {...movie}>
-            <button onClick={() => addFav(movie)} className="btn btn-primary">
-              <i className="bi bi-heart-fill m-4"></i>
+            <button
+              onClick={() => addFav(movie)}
+              className="btn btn-primary w-25"
+            >
+              <i className="bi bi-heart-fill"></i>
             </button>
           </Pelicula>
         ))}
