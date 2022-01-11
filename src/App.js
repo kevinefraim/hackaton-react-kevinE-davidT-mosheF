@@ -11,8 +11,8 @@ import Footer from "./components/footer/Footer";
 function App() {
   return (
     <>
-      <Router>
-        <UserProvider>
+      <UserProvider>
+        <Router>
           <Navbar />
           <Routes>
             <Route path="/" element={<Inicio />} />
@@ -21,8 +21,8 @@ function App() {
             <Route path="/:id" element={<Detalles />} />
           </Routes>
           <Footer />
-        </UserProvider>
-      </Router>
+        </Router>
+      </UserProvider>
     </>
   );
 }
