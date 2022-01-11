@@ -6,12 +6,13 @@ import Inicio from "./components/inicio/Inicio";
 import Navbar from "./components/navbar/Navbar";
 import UserProvider from "./store/appContext";
 import Lanzamientos from "./components/lanzamientos/Lanzamientos";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
     <>
-      <UserProvider>
-        <Router>
+      <Router>
+        <UserProvider>
           <Navbar />
           <Routes>
             <Route path="/" element={<Inicio />} />
@@ -19,8 +20,9 @@ function App() {
             <Route path="/lanzamientos" element={<Lanzamientos />} />
             <Route path="/:id" element={<Detalles />} />
           </Routes>
-        </Router>
-      </UserProvider>
+          <Footer />
+        </UserProvider>
+      </Router>
     </>
   );
 }
